@@ -1,3 +1,16 @@
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
+<script>
+  function goAway(ev) {
+    ev.target.style.display = "none";
+  }
+  function setupHandlers() {
+    $("p").on("click", goAway);
+  }
+  $(document).ready(setupHandlers);
+</script>
+
+<p>Chicago</p>
+<p>Detroit</p>
+<p>Los Angeles</p>
 

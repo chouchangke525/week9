@@ -1,9 +1,24 @@
 <!-- What happens if we switch the order? -->
-<h1 id="title">Wazzzzzup!</h1>
+<h1 id="title" onclick="changeColors();">UChicago</h1>
 <script>
-  var e = document.getElementById("title");
-  alert(e.innerHTML);
+  // var e = document.getElementById("title");
+  // alert(e.innerHTML);
 </script>
+<p>One</p>
+<p>Two</p>
+<p>Three</p>
+
 
 <!-- Use the .style property to make it disappear
 when clicked -->
+
+
+<script>
+  function changeColors() {
+  var e = document.getElementsByTagName("p");
+  for (var i=0; i < e.length; ++i) {
+    e[i].style.color = "red";
+  }
+}
+</script>
+
